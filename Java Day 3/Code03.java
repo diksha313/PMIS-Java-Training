@@ -1,5 +1,5 @@
 import java.util.*;
-public class Code3 {
+public class Code03 {
     public static void largerNumber(int n1, int n2) {
     
     if(n1 > n2) {

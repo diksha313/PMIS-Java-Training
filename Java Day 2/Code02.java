@@ -3,7 +3,7 @@
 // **
 // ***
 // ****
-public class Code2{
+public class Code02{
     public static void main(String[] args){
 
        

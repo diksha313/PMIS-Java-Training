@@ -1,5 +1,5 @@
 import java.util.*;
-public class Code2 {
+public class Code02 {
     static int sumOddNumbers(int n) {
     int sum=0;
     for(int i=1;i<=n;i++){
@@ -13,7 +13,7 @@ public class Code2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
         int n = sc.nextInt();
-        int result =Code2.sumOddNumbers(n);
+        int result =Code02.sumOddNumbers(n);
         System.out.println("The sum of odd numbers from 1 to " + n + " is " + result);
         sc.close();
     }

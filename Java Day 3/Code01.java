@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Code1 {
+public class Code01 {
     public static void main(String[] arg){
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter number 1");

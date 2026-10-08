@@ -5,7 +5,7 @@
 // 12
 // 1
 
-public class Code7 {
+public class Code07 {
     public static void main(String[] args) {
 
          for (int i = 5; i >= 1; i--) {      

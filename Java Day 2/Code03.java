@@ -3,7 +3,7 @@
 // *   *
 // *   *
 // *****
-public class Code3 {
+public class Code03 {
     public static void main(String[] args) {
 
          for (int i = 1; i <= 4; i++) {   

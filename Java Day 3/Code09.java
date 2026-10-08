@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Code9 {
+public class Code09 {
     public static int GCD(int a, int b){
         int GCD=1;
         for(int i=1;i<=a && i<=b; i++){

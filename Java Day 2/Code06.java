@@ -4,7 +4,7 @@
 // 123
 // 1234
 // 12345
-public class Code6 {
+public class Code06 {
      public static void main(String[] args) {
 
          for (int i = 1; i <= 5; i++) {

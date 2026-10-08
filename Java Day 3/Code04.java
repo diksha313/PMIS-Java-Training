@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Code4 {
+public class Code04 {
     public static int circumference(float radius) {
         float circum=2*3.14f*radius;
         return (int)circum;
