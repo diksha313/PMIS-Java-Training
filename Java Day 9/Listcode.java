@@ -1,5 +1,5 @@
 import java.util.*;
-public class list {
+public class Listcode {
     public static void printList(List<?> list){
         for(Object o: list){
             System.out.println(o);

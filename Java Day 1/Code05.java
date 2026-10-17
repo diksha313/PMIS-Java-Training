@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Code05 {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 import java.util.*;
-public class gen4{
+public class Generic5{
     static double sum(List<? extends Number>list){
         double total=0;
         for(Number n : list){

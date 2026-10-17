@@ -7,7 +7,7 @@ class Util{
         return b;
     } 
 }
-public class gen2 {
+public class Generic3 {
     public static void main(String[] args) {
         Util.printTwice(100);
         System.out.println(Util.firstOf("hi","hello"));

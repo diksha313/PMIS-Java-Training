@@ -7,7 +7,7 @@ class Box<T>{
         return item;
     }
 }
-public class gen {
+public class Generic1 {
     public static void main(String[] args){
         Box<String> box=new Box<>();
         box.set("hello");

@@ -13,7 +13,7 @@ class Pair<K,V>{
         return value;
     }
 }
-public class gen1 {
+public class Generic2 {
     public static void main(String[] args) {
         Pair<String,Integer> p = new Pair<>("Age",25);
         String k = p.getKey();

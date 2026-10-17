@@ -10,7 +10,7 @@ class Box<T> {
     }
 }
 
-public class Generic {
+public class Generic6 {
     public static void main(String[] args) {
 
         Box<String> mobile = new Box<>();

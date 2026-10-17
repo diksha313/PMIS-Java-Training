@@ -10,7 +10,7 @@ class Locker<T>{
     }
 }
 
-class gen3{
+class Generic4{
     public static void main(String[] args){
         Locker<String> l1 = new Locker<>();
         l1.put("C++ book");
