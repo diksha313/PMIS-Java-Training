@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Map;
 
 public class ConsoleMenu {
 
@@ -39,6 +40,8 @@ public class ConsoleMenu {
             System.out.println("8. Add Service Record");
             System.out.println("9. View Service Records");
             System.out.println("10. Maintenance Alerts");
+            System.out.println("11. Fleet Operational Cost Report");
+            System.out.println("12. Check Low Mileage Anomaly");
             System.out.println("0. Exit");
 
             System.out.print("Enter your choice: ");
@@ -57,6 +60,8 @@ public class ConsoleMenu {
                     case 8 -> addServiceRecord();
                     case 9 -> viewServiceRecords();
                     case 10 -> maintenanceAlerts();
+                    case 11 -> operationalCostReport();
+                    case 12 -> checkLowMileageAnomaly();
                     case 0 -> System.out.println("Exiting application...");
                     default -> System.out.println("Invalid choice!");
                 }
@@ -198,10 +203,10 @@ public class ConsoleMenu {
         int reading = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Service Date (YYYY-MM-DD): ");
-        LocalDate date = LocalDate.parse(scanner.nextLine());
+        LocalDate serviceDate = LocalDate.parse(scanner.nextLine().trim());
 
         ServiceRecord record = new ServiceRecord(
-                0, reg, type, cost, reading, date
+                0, reg, type, cost, reading, serviceDate
         );
 
         maintenanceService.addServiceRecord(record);
@@ -244,6 +249,53 @@ public class ConsoleMenu {
                     v.getRegNumber() + " | " +
                             v.getModel() + " | Current Odometer: " +
                             v.getCurrentOdometer()
+            );
+        }
+    }
+
+    private void operationalCostReport() {
+
+        List<Map<String, Object>> report =
+                vehicleService.getOperationalCostReport();
+
+        System.out.println("\n===== FLEET OPERATIONAL COST REPORT =====");
+
+        System.out.printf(
+                "%-15s %-25s %-15s %-18s %-15s%n",
+                "Registration",
+                "Model",
+                "Fuel Cost",
+                "Maintenance",
+                "Total Cost"
+        );
+
+        for (Map<String, Object> row : report) {
+
+            System.out.printf(
+                    "%-15s %-25s %-15s %-18s %-15s%n",
+                    row.get("reg_number"),
+                    row.get("model"),
+                    row.get("fuel_cost"),
+                    row.get("maintenance_cost"),
+                    row.get("total_cost")
+            );
+        }
+    }
+
+    private void checkLowMileageAnomaly() {
+
+        System.out.print("Registration Number: ");
+        String reg = scanner.nextLine();
+
+        boolean anomaly = fuelService.isLowMileageAnomaly(reg);
+
+        if (anomaly) {
+            System.out.println(
+                    "LOW MILEAGE ANOMALY DETECTED for " + reg
+            );
+        } else {
+            System.out.println(
+                    "Fuel mileage is within the expected range for " + reg
             );
         }
     }

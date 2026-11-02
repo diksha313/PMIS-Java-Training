@@ -1,3 +1,4 @@
+
 package com.fleet.fleet_maintenance.service;
 
 import com.fleet.fleet_maintenance.dao.ServiceRecordDao;
@@ -5,6 +6,7 @@ import com.fleet.fleet_maintenance.dao.VehicleDao;
 import com.fleet.fleet_maintenance.model.ServiceRecord;
 import com.fleet.fleet_maintenance.model.Vehicle;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -42,15 +44,42 @@ public class MaintenanceService {
         );
     }
 
+    @Transactional
     public List<Vehicle> getMaintenanceAlerts() {
 
         List<Vehicle> vehicles = vehicleDao.getAllVehicles();
 
         return vehicles.stream()
                 .filter(vehicle ->
-                        vehicle.getCurrentOdometer()
-                                - vehicle.getLastServiceOdometer()
-                                >= SERVICE_INTERVAL)
+                        "ACTIVE".equals(vehicle.getStatus()) ||
+                                "DUE_FOR_SERVICE".equals(vehicle.getStatus())
+                )
+                .filter(vehicle -> {
+
+                    int distance =
+                            vehicle.getCurrentOdometer()
+                                    - vehicle.getLastServiceOdometer();
+
+                    boolean isDue = distance >= SERVICE_INTERVAL;
+
+                    String requiredStatus = isDue
+                            ? "DUE_FOR_SERVICE"
+                            : "ACTIVE";
+
+                    if (!requiredStatus.equals(vehicle.getStatus())) {
+                        vehicleDao.updateStatus(
+                                vehicle.getRegNumber(),
+                                requiredStatus
+                        );
+
+                        auditService.logActivity(
+                                "Vehicle " + vehicle.getRegNumber()
+                                        + " status updated to " + requiredStatus
+                        );
+                    }
+
+                    return isDue;
+                })
                 .toList();
     }
 }

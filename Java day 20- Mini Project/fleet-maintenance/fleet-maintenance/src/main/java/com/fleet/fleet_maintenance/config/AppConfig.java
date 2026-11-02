@@ -12,6 +12,8 @@ import com.fleet.fleet_maintenance.service.FuelService;
 import com.fleet.fleet_maintenance.service.MaintenanceService;
 import com.fleet.fleet_maintenance.service.AuditService;
 import com.fleet.fleet_maintenance.console.ConsoleMenu;
+
+
 @Configuration
 public class AppConfig {
 
@@ -41,15 +43,22 @@ public class AppConfig {
     @Bean
     public VehicleService vehicleService(
             VehicleDao vehicleDao,
+            ServiceRecordDao serviceRecordDao,
             AuditService auditService) {
-        return new VehicleService(vehicleDao, auditService);
+
+        return new VehicleService(
+                vehicleDao,
+                serviceRecordDao,
+                auditService
+        );
     }
 
     @Bean
     public FuelService fuelService(
             FuelEntryDao fuelEntryDao,
+            VehicleDao vehicleDao,
             AuditService auditService) {
-        return new FuelService(fuelEntryDao, auditService);
+        return new FuelService(fuelEntryDao, vehicleDao, auditService);
     }
 
     @Bean

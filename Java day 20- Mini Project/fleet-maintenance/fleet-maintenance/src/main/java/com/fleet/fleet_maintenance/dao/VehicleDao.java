@@ -3,7 +3,7 @@ package com.fleet.fleet_maintenance.dao;
 import com.fleet.fleet_maintenance.model.Vehicle;
 import com.fleet.fleet_maintenance.rowmapper.VehicleRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-
+import java.util.Map;
 import java.util.List;
 
 public class VehicleDao {
@@ -58,6 +58,42 @@ public class VehicleDao {
                 """;
 
         return jdbcTemplate.update(sql, odometer, regNumber);
+    }
+    public int updateStatus(String regNumber, String status) {
+
+        String sql = """
+            UPDATE vehicles
+            SET status = ?
+            WHERE reg_number = ?
+            """;
+
+        return jdbcTemplate.update(sql, status, regNumber);
+    }
+    public List<Map<String, Object>> getOperationalCostReport() {
+
+        String sql = """
+            SELECT
+                v.reg_number,
+                v.model,
+                COALESCE(f.total_fuel_cost, 0) AS fuel_cost,
+                COALESCE(s.total_service_cost, 0) AS maintenance_cost,
+                COALESCE(f.total_fuel_cost, 0)
+                    + COALESCE(s.total_service_cost, 0) AS total_cost
+            FROM vehicles v
+            LEFT JOIN (
+                SELECT reg_number, SUM(cost) AS total_fuel_cost
+                FROM fuel_entries
+                GROUP BY reg_number
+            ) f ON v.reg_number = f.reg_number
+            LEFT JOIN (
+                SELECT reg_number, SUM(service_cost) AS total_service_cost
+                FROM service_records
+                GROUP BY reg_number
+            ) s ON v.reg_number = s.reg_number
+            ORDER BY v.reg_number
+            """;
+
+        return jdbcTemplate.queryForList(sql);
     }
 
     public int deleteVehicle(String regNumber) {
