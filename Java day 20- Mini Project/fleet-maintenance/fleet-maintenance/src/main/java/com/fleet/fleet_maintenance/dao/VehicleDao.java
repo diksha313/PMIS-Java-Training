@@ -16,7 +16,10 @@ public class VehicleDao {
 
     public List<Vehicle> getAllVehicles() {
 
-        String sql = "SELECT * FROM vehicles";
+        String sql = """
+            SELECT * FROM vehicles
+            WHERE status != 'DELETED'
+            """;
 
         return jdbcTemplate.query(sql, new VehicleRowMapper());
     }
@@ -90,6 +93,7 @@ public class VehicleDao {
                 FROM service_records
                 GROUP BY reg_number
             ) s ON v.reg_number = s.reg_number
+            WHERE v.status != 'DELETED'
             ORDER BY v.reg_number
             """;
 
@@ -98,7 +102,12 @@ public class VehicleDao {
 
     public int deleteVehicle(String regNumber) {
 
-        String sql = "DELETE FROM vehicles WHERE reg_number = ?";
+        String sql = """
+        UPDATE vehicles
+        SET status = 'DELETED'
+        WHERE reg_number = ?
+        AND status != 'DELETED'
+        """;
 
         return jdbcTemplate.update(sql, regNumber);
     }

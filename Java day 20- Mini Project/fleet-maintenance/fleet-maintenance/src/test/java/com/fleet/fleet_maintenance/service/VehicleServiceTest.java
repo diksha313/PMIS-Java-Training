@@ -127,9 +127,12 @@ class VehicleServiceTest {
 
     @Test
     void testDeleteVehicle() {
+        when(vehicleDao.deleteVehicle("MH02XY9999")).thenReturn(1);
+
         vehicleService.deleteVehicle("MH02XY9999");
 
         verify(vehicleDao).deleteVehicle("MH02XY9999");
+
         verify(auditService).logActivity(
                 "Vehicle deleted: MH02XY9999"
         );

@@ -38,11 +38,14 @@ public class VehicleService {
     }
 
     public Vehicle getVehicle(String regNumber) {
-        return vehicleDao.getVehicleByRegNumber(regNumber);
+        return vehicleDao.getVehicleByRegNumber(regNumber.strip());
     }
+
 
     @Transactional
     public void addVehicle(Vehicle vehicle) {
+
+        vehicle.setRegNumber(vehicle.getRegNumber().strip());
 
         vehicleDao.addVehicle(vehicle);
 
@@ -63,13 +66,12 @@ public class VehicleService {
         );
     }
 
+
     public void updateOdometer(String regNumber, int odometer) {
 
-        Vehicle vehicle = vehicleDao.getVehicleByRegNumber(regNumber);
+        regNumber = regNumber.strip();
 
-        if (vehicle == null) {
-            throw new IllegalArgumentException("Vehicle not found.");
-        }
+        Vehicle vehicle = vehicleDao.getVehicleByRegNumber(regNumber);
 
         if (odometer < vehicle.getCurrentOdometer()) {
             throw new IllegalArgumentException(
@@ -85,9 +87,21 @@ public class VehicleService {
     }
 
     public void deleteVehicle(String regNumber) {
-        vehicleDao.deleteVehicle(regNumber);
+
+        regNumber = regNumber.strip();
+
+        int rowsAffected = vehicleDao.deleteVehicle(regNumber);
+
+        if (rowsAffected == 0) {
+            System.out.println("Vehicle not found or already deleted!");
+            return;
+        }
+
         auditService.logActivity(
                 "Vehicle deleted: " + regNumber
         );
+
+        System.out.println("Vehicle deleted successfully!");
     }
+
 }

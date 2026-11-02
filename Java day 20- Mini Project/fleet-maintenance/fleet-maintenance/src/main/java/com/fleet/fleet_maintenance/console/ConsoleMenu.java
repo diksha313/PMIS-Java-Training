@@ -80,8 +80,7 @@ public class ConsoleMenu {
 
         for (Vehicle v : vehicles) {
             System.out.println(
-                    v.getId() + " | " +
-                            v.getRegNumber() + " | " +
+                    v.getRegNumber() + " | " +
                             v.getModel() + " | " +
                             v.getCurrentOdometer() + " | " +
                             v.getStatus()
@@ -92,7 +91,7 @@ public class ConsoleMenu {
     private void addVehicle() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         System.out.print("Vehicle Model: ");
         String model = scanner.nextLine();
@@ -115,7 +114,7 @@ public class ConsoleMenu {
     private void updateOdometer() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         System.out.print("New Odometer Reading: ");
         int reading = Integer.parseInt(scanner.nextLine());
@@ -128,17 +127,15 @@ public class ConsoleMenu {
     private void deleteVehicle() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         vehicleService.deleteVehicle(reg);
-
-        System.out.println("Vehicle deleted successfully!");
     }
 
     private void addFuelEntry() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         System.out.print("Fuel Litres: ");
         BigDecimal litres = new BigDecimal(scanner.nextLine());
@@ -161,7 +158,7 @@ public class ConsoleMenu {
     private void viewFuelEntries() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         List<FuelEntry> entries = fuelService.getFuelEntries(reg);
 
@@ -178,7 +175,7 @@ public class ConsoleMenu {
     private void calculateEfficiency() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         BigDecimal efficiency =
                 fuelService.calculateFuelEfficiency(reg);
@@ -191,7 +188,7 @@ public class ConsoleMenu {
     private void addServiceRecord() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         System.out.print("Service Type: ");
         String type = scanner.nextLine();
@@ -217,7 +214,7 @@ public class ConsoleMenu {
     private void viewServiceRecords() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         List<ServiceRecord> records =
                 maintenanceService.getServiceRecords(reg);
@@ -285,7 +282,7 @@ public class ConsoleMenu {
     private void checkLowMileageAnomaly() {
 
         System.out.print("Registration Number: ");
-        String reg = scanner.nextLine();
+        String reg = scanner.nextLine().strip();
 
         boolean anomaly = fuelService.isLowMileageAnomaly(reg);
 
