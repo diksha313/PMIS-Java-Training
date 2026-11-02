@@ -1,0 +1,149 @@
+R100	Java Day 15- JDBC/JDBC/.gitignore	Java Day 14- JDBC/JDBC/.gitignore
+R100	Java Day 15- JDBC/JDBC/.idea/.gitignore	Java Day 14- JDBC/JDBC/.idea/.gitignore
+R100	Java Day 15- JDBC/JDBC/.idea/libraries/mysql_connector_j_26_10_0.xml	Java Day 14- JDBC/JDBC/.idea/libraries/mysql_connector_j_26_10_0.xml
+R100	Java Day 15- JDBC/JDBC/.idea/misc.xml	Java Day 14- JDBC/JDBC/.idea/misc.xml
+R100	Java Day 15- JDBC/JDBC/.idea/modules.xml	Java Day 14- JDBC/JDBC/.idea/modules.xml
+R100	Java Day 15- JDBC/JDBC/.idea/vcs.xml	Java Day 14- JDBC/JDBC/.idea/vcs.xml
+R100	Java Day 15- JDBC/JDBC/JDBC.iml	Java Day 14- JDBC/JDBC/JDBC.iml
+R100	Java Day 15- JDBC/JDBC/src/Oct_23.java	Java Day 14- JDBC/JDBC/src/Oct_23.java
+R100	Java Day 15- JDBC/JDBC/src/select.java	Java Day 14- JDBC/JDBC/src/select.java
+R100	Java Day 15- JDBC/JDBC/src/test.java	Java Day 14- JDBC/JDBC/src/test.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/.gitignore	Java Day 14- JDBC/LibraryManagementSystem/.gitignore
+R100	Java Day 15- JDBC/LibraryManagementSystem/README.md	Java Day 14- JDBC/LibraryManagementSystem/README.md
+R100	Java Day 15- JDBC/LibraryManagementSystem/pom.xml	Java Day 14- JDBC/LibraryManagementSystem/pom.xml
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/app/Main.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/app/Main.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/config/DatabaseConnection.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/config/DatabaseConnection.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/BookDao.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/BookDao.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/BorrowRecordDao.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/BorrowRecordDao.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/UserDao.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/dao/UserDao.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/Book.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/Book.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/BorrowRecord.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/BorrowRecord.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/BorrowStatus.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/BorrowStatus.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/LibraryUser.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/LibraryUser.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/UserRole.java	Java Day 14- JDBC/LibraryManagementSystem/src/main/java/com/librarymanagement/model/UserRole.java
+R100	Java Day 15- JDBC/LibraryManagementSystem/src/main/resources/schema.sql	Java Day 14- JDBC/LibraryManagementSystem/src/main/resources/schema.sql
+R100	Java Day 16- Date Time/.idea/vcs.xml	Java Day 15- Date Time/.idea/vcs.xml
+R100	Java Day 16- Date Time/.idea/workspace.xml	Java Day 15- Date Time/.idea/workspace.xml
+R100	Java Day 16- Date Time/DateExplorer.java	Java Day 15- Date Time/DateExplorer.java
+R100	Java Day 16- Date Time/Java Day 16- Date Time.iml	Java Day 15- Date Time/Java Day 16- Date Time.iml
+R100	Java Day 16- Date Time/LocalDate1.java	Java Day 15- Date Time/LocalDate1.java
+R100	Java Day 16- Date Time/LocalTime1.java	Java Day 15- Date Time/LocalTime1.java
+R100	Java Day 16- Date Time/ZoneExplorer.java	Java Day 15- Date Time/ZoneExplorer.java
+R100	Java Day 16- Date Time/dataTime.java	Java Day 15- Date Time/dataTime.java
+R100	Java Day 16- Date Time/datatime1.java	Java Day 15- Date Time/datatime1.java
+R100	Java Day 17/.idea/.gitignore	Java Day 16/.idea/.gitignore
+R100	Java Day 17/.idea/misc.xml	Java Day 16/.idea/misc.xml
+R100	Java Day 17/.idea/modules.xml	Java Day 16/.idea/modules.xml
+R100	Java Day 17/.idea/vcs.xml	Java Day 16/.idea/vcs.xml
+R100	Java Day 17/Java Day 17.iml	Java Day 16/Java Day 17.iml
+R100	Java Day 17/StudentReportCard/.gitignore	Java Day 16/StudentReportCard/.gitignore
+R100	Java Day 17/StudentReportCard/.idea/.gitignore	Java Day 16/StudentReportCard/.idea/.gitignore
+R100	Java Day 17/StudentReportCard/.idea/misc.xml	Java Day 16/StudentReportCard/.idea/misc.xml
+R100	Java Day 17/StudentReportCard/.idea/modules.xml	Java Day 16/StudentReportCard/.idea/modules.xml
+R100	Java Day 17/StudentReportCard/.idea/vcs.xml	Java Day 16/StudentReportCard/.idea/vcs.xml
+R100	Java Day 17/StudentReportCard/StudentReportCard.iml	Java Day 16/StudentReportCard/StudentReportCard.iml
+R100	Java Day 17/StudentReportCard/src/Student.java	Java Day 16/StudentReportCard/src/Student.java
+R100	Java Day 17/StudentReportCard/src/StudentDemo.java	Java Day 16/StudentReportCard/src/StudentDemo.java
+R100	Java Day 17/VehicleRentShop/.gitignore	Java Day 16/VehicleRentShop/.gitignore
+R100	Java Day 17/VehicleRentShop/.idea/.gitignore	Java Day 16/VehicleRentShop/.idea/.gitignore
+R100	Java Day 17/VehicleRentShop/.idea/misc.xml	Java Day 16/VehicleRentShop/.idea/misc.xml
+R100	Java Day 17/VehicleRentShop/.idea/modules.xml	Java Day 16/VehicleRentShop/.idea/modules.xml
+R100	Java Day 17/VehicleRentShop/.idea/vcs.xml	Java Day 16/VehicleRentShop/.idea/vcs.xml
+R100	Java Day 17/VehicleRentShop/VehicleRentShop Day 17.iml	Java Day 16/VehicleRentShop/VehicleRentShop Day 17.iml
+R100	Java Day 17/VehicleRentShop/src/Bike.java	Java Day 16/VehicleRentShop/src/Bike.java
+R100	Java Day 17/VehicleRentShop/src/Car.java	Java Day 16/VehicleRentShop/src/Car.java
+R100	Java Day 17/VehicleRentShop/src/Customer.java	Java Day 16/VehicleRentShop/src/Customer.java
+R100	Java Day 17/VehicleRentShop/src/Main.java	Java Day 16/VehicleRentShop/src/Main.java
+R100	Java Day 17/VehicleRentShop/src/Rentable.java	Java Day 16/VehicleRentShop/src/Rentable.java
+R100	Java Day 17/VehicleRentShop/src/RentableShop.java	Java Day 16/VehicleRentShop/src/RentableShop.java
+R100	Java Day 17/VehicleRentShop/src/Rental.java	Java Day 16/VehicleRentShop/src/Rental.java
+R100	Java Day 17/VehicleRentShop/src/Truck.java	Java Day 16/VehicleRentShop/src/Truck.java
+R100	Java Day 17/VehicleRentShop/src/Vehicle.java	Java Day 16/VehicleRentShop/src/Vehicle.java
+R100	Java Day 18-Spring/.idea/misc.xml	Java Day 17-Spring/.idea/misc.xml
+R100	Java Day 18-Spring/.idea/vcs.xml	Java Day 17-Spring/.idea/vcs.xml
+R100	Java Day 18-Spring/.idea/workspace.xml	Java Day 17-Spring/.idea/workspace.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/compiler.xml	Java Day 17-Spring/QuickRelief/.idea/compiler.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/encodings.xml	Java Day 17-Spring/QuickRelief/.idea/encodings.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/jarRepositories.xml	Java Day 17-Spring/QuickRelief/.idea/jarRepositories.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/misc.xml	Java Day 17-Spring/QuickRelief/.idea/misc.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/vcs.xml	Java Day 17-Spring/QuickRelief/.idea/vcs.xml
+R100	Java Day 18-Spring/QuickRelief/.idea/workspace.xml	Java Day 17-Spring/QuickRelief/.idea/workspace.xml
+R100	Java Day 18-Spring/QuickRelief/demo1/.gitattributes	Java Day 17-Spring/QuickRelief/demo1/.gitattributes
+R100	Java Day 18-Spring/QuickRelief/demo1/.gitignore	Java Day 17-Spring/QuickRelief/demo1/.gitignore
+R100	Java Day 18-Spring/QuickRelief/demo1/.mvn/wrapper/maven-wrapper.properties	Java Day 17-Spring/QuickRelief/demo1/.mvn/wrapper/maven-wrapper.properties
+R100	Java Day 18-Spring/QuickRelief/demo1/mvnw	Java Day 17-Spring/QuickRelief/demo1/mvnw
+R100	Java Day 18-Spring/QuickRelief/demo1/mvnw.cmd	Java Day 17-Spring/QuickRelief/demo1/mvnw.cmd
+R100	Java Day 18-Spring/QuickRelief/demo1/pom.xml	Java Day 17-Spring/QuickRelief/demo1/pom.xml
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/ApiExceptionHandler.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/ApiExceptionHandler.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/Demo1Application.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/Demo1Application.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/Supply.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/Supply.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/SupplyRequest.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/SupplyRequest.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/controller/RequestController.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/controller/RequestController.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/controller/SupplyController.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/controller/SupplyController.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/repository/RequestRepository.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/repository/RequestRepository.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/repository/SupplyRepository.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/repository/SupplyRepository.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/service/RequestService.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/service/RequestService.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/service/SupplyService.java	Java Day 17-Spring/QuickRelief/demo1/src/main/java/com/quickrelief/demo1/service/SupplyService.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/resources/application.properties	Java Day 17-Spring/QuickRelief/demo1/src/main/resources/application.properties
+R100	Java Day 18-Spring/QuickRelief/demo1/src/main/resources/schema.sql	Java Day 17-Spring/QuickRelief/demo1/src/main/resources/schema.sql
+R100	Java Day 18-Spring/QuickRelief/demo1/src/test/java/com/quickrelief/demo1/Demo1ApplicationTests.java	Java Day 17-Spring/QuickRelief/demo1/src/test/java/com/quickrelief/demo1/Demo1ApplicationTests.java
+R100	Java Day 18-Spring/QuickRelief/demo1/src/test/java/com/quickrelief/demo1/RequestServiceTest.java	Java Day 17-Spring/QuickRelief/demo1/src/test/java/com/quickrelief/demo1/RequestServiceTest.java
+R100	Java Day 18-Spring/demo/demo/.gitattributes	Java Day 17-Spring/demo/demo/.gitattributes
+R100	Java Day 18-Spring/demo/demo/.gitignore	Java Day 17-Spring/demo/demo/.gitignore
+R100	Java Day 18-Spring/demo/demo/.mvn/wrapper/maven-wrapper.properties	Java Day 17-Spring/demo/demo/.mvn/wrapper/maven-wrapper.properties
+R100	Java Day 18-Spring/demo/demo/mvnw	Java Day 17-Spring/demo/demo/mvnw
+R100	Java Day 18-Spring/demo/demo/mvnw.cmd	Java Day 17-Spring/demo/demo/mvnw.cmd
+R100	Java Day 18-Spring/demo/demo/pom.xml	Java Day 17-Spring/demo/demo/pom.xml
+R100	Java Day 18-Spring/demo/demo/src/main/java/com/example/demo/DemoApplication.java	Java Day 17-Spring/demo/demo/src/main/java/com/example/demo/DemoApplication.java
+R100	Java Day 18-Spring/demo/demo/src/main/resources/application.properties	Java Day 17-Spring/demo/demo/src/main/resources/application.properties
+R100	Java Day 18-Spring/demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java	Java Day 17-Spring/demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java
+R100	Java Day 19-Spring/basicbeans/.gitattributes	Java Day 18-Spring/basicbeans/.gitattributes
+R100	Java Day 19-Spring/basicbeans/.gitignore	Java Day 18-Spring/basicbeans/.gitignore
+R100	Java Day 19-Spring/basicbeans/.mvn/wrapper/maven-wrapper.properties	Java Day 18-Spring/basicbeans/.mvn/wrapper/maven-wrapper.properties
+R100	Java Day 19-Spring/basicbeans/mvnw	Java Day 18-Spring/basicbeans/mvnw
+R100	Java Day 19-Spring/basicbeans/mvnw.cmd	Java Day 18-Spring/basicbeans/mvnw.cmd
+R100	Java Day 19-Spring/basicbeans/pom.xml	Java Day 18-Spring/basicbeans/pom.xml
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/BasicbeansApplication.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/BasicbeansApplication.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BasicBean.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BasicBean.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanConfiguration.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanConfiguration.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanMethodExample.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanMethodExample.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanScopeExample.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/BeanScopeExample.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/ComponentBeanExample.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/ComponentBeanExample.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/GreetingService.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/GreetingService.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/PrototypeBean.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/PrototypeBean.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/ScopeConfiguration.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/ScopeConfiguration.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/SingletonBean.java	Java Day 18-Spring/basicbeans/src/main/java/com/example/basicbeans/basic/SingletonBean.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/spring/beans/basic/MessageRepository.java	Java Day 18-Spring/basicbeans/src/main/java/com/spring/beans/basic/MessageRepository.java
+R100	Java Day 19-Spring/basicbeans/src/main/java/com/spring/beans/basic/MessageService.java	Java Day 18-Spring/basicbeans/src/main/java/com/spring/beans/basic/MessageService.java
+R100	Java Day 19-Spring/basicbeans/src/main/resources/application.properties	Java Day 18-Spring/basicbeans/src/main/resources/application.properties
+R100	Java Day 19-Spring/basicbeans/src/test/java/com/example/basicbeans/BasicbeansApplicationTests.java	Java Day 18-Spring/basicbeans/src/test/java/com/example/basicbeans/BasicbeansApplicationTests.java
+A	Java Day 19-RestAPI/.idea/.gitignore
+A	Java Day 19-RestAPI/.idea/Java Day 20-RestAPI.iml
+A	Java Day 19-RestAPI/.idea/misc.xml
+A	Java Day 19-RestAPI/.idea/modules.xml
+A	Java Day 19-RestAPI/.idea/vcs.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/.gitignore
+A	Java Day 19-RestAPI/RestAPI/.idea/RestAPI.iml
+A	Java Day 19-RestAPI/RestAPI/.idea/compiler.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/encodings.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/jarRepositories.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/misc.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/modules.xml
+A	Java Day 19-RestAPI/RestAPI/.idea/vcs.xml
+A	Java Day 19-RestAPI/RestAPI/RestAPI/.gitattributes
+A	Java Day 19-RestAPI/RestAPI/RestAPI/.gitignore
+A	Java Day 19-RestAPI/RestAPI/RestAPI/.mvn/wrapper/maven-wrapper.properties
+A	Java Day 19-RestAPI/RestAPI/RestAPI/mvnw
+A	Java Day 19-RestAPI/RestAPI/RestAPI/mvnw.cmd
+A	Java Day 19-RestAPI/RestAPI/RestAPI/pom.xml
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/RestApiApplication.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/controller/CreateCourseController.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/controller/DeleteCourseController.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/controller/GetAllCoursesController.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/controller/GetCourseController.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/controller/UpdateCourseController.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/entity/Course.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/repository/CourseRepository.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/java/com/example/RestAPI/service/CourseService.java
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/main/resources/application.properties
+A	Java Day 19-RestAPI/RestAPI/RestAPI/src/test/java/com/example/RestAPI/RestApiApplicationTests.java
