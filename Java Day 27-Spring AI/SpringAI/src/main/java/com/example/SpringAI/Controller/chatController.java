@@ -21,8 +21,6 @@ public class chatController {
                 .user(q)
                 .call()
                 .content();
-
-        System.out.println("Gemini Response: " + response);
         return ResponseEntity.ok(response);
     }
 
